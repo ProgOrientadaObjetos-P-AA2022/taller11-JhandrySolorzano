@@ -34,7 +34,7 @@ public class Taller11 {
             InventarioCarta.get(i).establecerValorMenu();
         }
 
-        Cuenta cuenta = new Cuenta("Joseph Martinez", 7, InventarioCarta);
+        Cuenta cuenta = new Cuenta("Jhandry Solorzano", 7, InventarioCarta);
         cuenta.establecerSubtotal();
         cuenta.establecerTotal();
 
