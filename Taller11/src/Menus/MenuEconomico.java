@@ -26,16 +26,13 @@ public class MenuEconomico extends Menu {
 
     @Override
     public String toString() {
-        String cadena = String.format("Menú Económico\n"
-                + "Nombre del Plato: %s\n"
-                + "Valor del Menú: %.2f\n"
-                + "Valor Inicial del menú: %.2f\n"
-                + "Porcentaje Descuento: %.2f\n",
-                obtenerNombrePlato(),
-                obtenerValorInicial(),
+         String cadena = String.format("Menu Económico\n%s", super.toString());
+        cadena = String.format("%s"
+                + "\tPorcentaje Descuento: %.2f\n"
+                + "\tValor del Menu:%.2f\n",
+                cadena,
                 obtenerDescuentoP(),
                 obtenerValorMenu());
-
         return cadena;
     }
 }

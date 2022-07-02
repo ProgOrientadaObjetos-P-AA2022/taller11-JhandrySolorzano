@@ -36,18 +36,14 @@ public class MenuNino extends Menu {
 
     @Override
     public String toString() {
-        String cadena = String.format("Menú Niños\n"
-                + "Nombre del Plato: %s\n"
-                + "Valor del Menú: %.2f\n"
-                + "Valor Inicial del menú: %.2f\n"
-                + "Valor porcion  helado: %.2f\n"
-                + "Valor porcion Pastel: %.2f\n",
-                obtenerNombrePlato(),
-                obtenerValorInicial(),
+           String cadena = String.format("Menu de Ninos\n%s", super.toString());
+        cadena = String.format("%s"
+                + "\tValor Porcion Helado:%.2f\n"
+                + "\tValor Porcion Pastel:%.2f\n"
+                + "\tValor del Menu:%.2f\n", cadena,
                 obtenerHelado(),
                 obtenerPastel(),
                 obtenerValorMenu());
-
         return cadena;
     }
 
